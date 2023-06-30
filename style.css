@@ -82,6 +82,7 @@ li:active{
     border-radius: 30px;
     font-family: Arial, Helvetica, sans-serif ;
     font-size: 15px;   
+    
 }
 
 
@@ -130,6 +131,16 @@ footer{
 }
 /*begin mobile*/
 @media screen and (max-width: 640px){
+    .text-block{
+        width: 50%;
+        height:50%;
+    }
+    .text-block h3,h2{
+        width:100%;
+        height:auto;
+        font-size: x-small;
+    }
+
     nav ul li {
         border-radius: 1em;
 
