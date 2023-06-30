@@ -1,0 +1,162 @@
+body{
+    background-image:linear-gradient(rgb(13, 152, 108),rgb(104, 209, 160),rgb(200, 231, 222))
+    
+
+}
+header img{
+    width:100%;/*This stretches the image accross the viewport*/
+    height: auto; /*The height will change based on the size of the base*/
+    max-width: 500px;
+   
+}
+
+nav {
+   /*border-top: 0.3em solid black;
+     border-bottom: 0.3em solid black;*/
+    margin-bottom: 1em;
+    border-radius: 1em;/*This rounds the corners of elements*/
+    text-align: center;
+    font-weight:bold;
+}
+
+nav ul {
+    padding: 0;
+    margin-top: 0.2em;
+    margin-bottom:0.2em ;
+}
+
+nav ul li{
+    background-color: aqua;
+    padding:1em;
+    min-width: 12%;
+    margin: .25em;
+    list-style-type: none;
+}
+nav ul li a{
+    color:azure;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    text-decoration: none;
+
+    border:1px solid rgb(164, 188, 13 );/*flat button*/
+    border-radius: 6px; /*flat button*/
+    background-color: rgb(200, 255, 0);/*flat button*/
+      
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover{
+    color: rgb(205, 141, 14);
+}
+
+li:active{
+    background-color: rgb(79, 165, 26);/*flat button*/
+    color: aqua;/*flat button*/
+}
+.container img{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    position: relative;
+    
+    
+}
+
+.text-block {
+    position: absolute;
+    bottom: 7px;
+    right: 8px;
+    background-color: rgb(125, 200, 233);
+    color: rgb(189, 21, 138);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 15px;   
+}
+
+
+main{
+    /*border-top: 0.3em solid black;
+    border-bottom: 0.3em solid black;*/
+    margin-bottom: 1em;
+    border-radius: 1em;/*This rounds the corners of elements*/
+}
+p {
+    font-family: 'Roboto', sans-serif;  
+}
+
+.parent {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+
+}
+
+.contentc{
+     position: relative;
+     left:160px;
+   
+    
+}
+
+
+   
+    
+
+
+
+footer{
+    font-style: initial;
+    font-weight: 700;
+    margin-top: 1em;
+    border-top: 0.3em solid black;
+    border-bottom: 0.3em solid black;
+    border-radius: 1em;/*This rounds the corners of elements*/
+    text-align:center
+    
+
+}
+/*begin mobile*/
+@media screen and (max-width: 640px){
+    nav ul li {
+        border-radius: 1em;
+
+    }
+}
+/*end mobile*/
+
+/*begin tablet*/
+@media screen and (max-width: 640px){
+    nav ul li {
+        display: inline-block;/*this lists item horizotally and allows them to stretch*/
+        border-radius: 1em;
+
+    }
+}
+/*end tablet*/
+
+/*begin desktop*/
+@media screen and (max-width: 961px){
+
+   /* nav{
+        float: right;
+    }*/
+    nav ul li {
+        display: inline-block;/*this lists item horizotally and allows them to stretch*/
+        border-radius: 1em;
+
+    }
+}
+/*end desktop*/
